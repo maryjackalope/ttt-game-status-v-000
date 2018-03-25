@@ -37,13 +37,14 @@ def won?(board)
 end
 
 
-def full?(board) 
+=begin def full?(board) 
   board.all? do |index|
     index == "X" || index =="O"
   end 
 end
 
 #end #why was this an error
+=end 
 
 def draw?(board)
   if full?(board) && !won?(board)
