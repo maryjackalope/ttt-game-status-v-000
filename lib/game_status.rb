@@ -44,7 +44,6 @@ def full?(board)
   end 
 end
 
-#end #why was this an error
 
 def draw?(board)
   if full?(board) && !won?(board)
