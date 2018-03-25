@@ -33,7 +33,9 @@ def won?(board)
           return win_combo
         end #end of if
     end #end of do
-  if draw?boa
+  if draw?(board)
+    return false
+  end #end of if draw
   end # end of if/else
 end # end of method 
 
