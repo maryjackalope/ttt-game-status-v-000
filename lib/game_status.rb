@@ -28,23 +28,22 @@ def won?(board)
       position_1 = board[win_dex_1]  
       position_2 = board[win_dex_2]
       position_3 = board[win_dex_3]
+    end #end of do
+  end # end of if/else
       
-    if (position_1 == "X" && position_2 == "X" && position_3 == "X") || (position_1 == "O" && position_2 == "O" && position_3 == "O") 
+  if (position_1 == "X" && position_2 == "X" && position_3 == "X") || (position_1 == "O" && position_2 == "O" && position_3 == "O") 
       return win_combo
-    end 
-  end 
-  false ##else
-end
+  end #end of if
+end # end of method 
 
 
-=begin def full?(board) 
+def full?(board) 
   board.all? do |index|
     index == "X" || index =="O"
   end 
 end
 
 #end #why was this an error
-=end 
 
 def draw?(board)
   if full?(board) && !won?(board)
